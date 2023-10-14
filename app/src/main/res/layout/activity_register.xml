@@ -9,7 +9,7 @@
     android:padding="16dp"
     android:gravity="center"
     android:layout_margin="16dp"
-    tools:context=".register.RegisterActivity">
+    tools:context=".authentication.RegisterActivity">
 
 <com.google.android.material.textfield.TextInputLayout
     android:layout_width="match_parent"
@@ -74,8 +74,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/password"
             android:inputType="textPassword"
-            app:passwordToogleEnable="true"
-            app:counterEnable="true"
+            app:passwordToggleEnabled="true"
+            app:counterEnabled="true"
             app:counterMaxLength="16"
             android:layout_marginTop="8dp"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -95,8 +95,8 @@
             android:layout_height="wrap_content"
             android:hint="Confirm Password"
             android:inputType="textPassword"
-            app:passwordToogleEnable="true"
-            app:counterEnable="true"
+            app:passwordToggleEnabled="true"
+            app:counterEnabled="true"
             app:counterMaxLength="16"
             android:layout_marginTop="8dp"/>
     </com.google.android.material.textfield.TextInputLayout>
@@ -127,7 +127,8 @@
         android:layout_marginTop="8dp"
         android:text="Registrasi"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button"
         android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
